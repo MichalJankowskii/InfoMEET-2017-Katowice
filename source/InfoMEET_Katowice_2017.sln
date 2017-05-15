@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Evil code", "2. Evil cod
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo1", "1. CleanCode\Demo1.csproj", "{B01002E6-565A-4B5E-9683-2070C9B05CA8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo2", "2. Evil code\Demo2.csproj", "{2720A57D-CA18-4DAF-B45E-3D1F49F74B2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +21,16 @@ Global
 		{B01002E6-565A-4B5E-9683-2070C9B05CA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B01002E6-565A-4B5E-9683-2070C9B05CA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B01002E6-565A-4B5E-9683-2070C9B05CA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2720A57D-CA18-4DAF-B45E-3D1F49F74B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2720A57D-CA18-4DAF-B45E-3D1F49F74B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2720A57D-CA18-4DAF-B45E-3D1F49F74B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2720A57D-CA18-4DAF-B45E-3D1F49F74B2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B01002E6-565A-4B5E-9683-2070C9B05CA8} = {2D6FF314-A195-4CC6-94EC-93BF2DC5C088}
+		{2720A57D-CA18-4DAF-B45E-3D1F49F74B2D} = {8D6F34A4-F37D-4657-90AF-259B113104FD}
 	EndGlobalSection
 EndGlobal
