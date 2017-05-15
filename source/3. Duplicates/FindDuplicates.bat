@@ -1,0 +1,2 @@
+.\Tools\JetBrains.ReSharper.CommandLineTools.2017.1.20170428.83814\dupfinder.exe .\Code\Objectivity.AutoFixture.XUnit2.AutoMocking.sln --show-text --o="report.xml"
+.\Tools\msxsl\msxsl.exe report.xml dupFinder.xsl -o result.html
