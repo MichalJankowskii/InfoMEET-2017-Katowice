@@ -11,6 +11,20 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo1", "1. CleanCode\Demo1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo2", "2. Evil code\Demo2.csproj", "{2720A57D-CA18-4DAF-B45E-3D1F49F74B2D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Duplicates", "3. Duplicates", "{B9FBE740-0ABC-4CA9-8292-7C4D8F2D3F32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Objectivity.AutoFixture.XUnit2.AutoMocking.Core", "3. Duplicates\Code\Objectivity.AutoFixture.XUnit2.AutoMocking.Core\Objectivity.AutoFixture.XUnit2.AutoMocking.Core.csproj", "{45FF7820-4C37-4672-8193-645FBA5EFB48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Objectivity.AutoFixture.XUnit2.AutoMocking.Core.Tests", "3. Duplicates\Code\Objectivity.AutoFixture.XUnit2.AutoMocking.Core.Tests\Objectivity.AutoFixture.XUnit2.AutoMocking.Core.Tests.csproj", "{DC909047-5C17-4585-AE97-464CBF077587}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Objectivity.AutoFixture.XUnit2.AutoMoq", "3. Duplicates\Code\Objectivity.AutoFixture.XUnit2.AutoMoq\Objectivity.AutoFixture.XUnit2.AutoMoq.csproj", "{B7ADCA12-249E-4A13-90A3-16AD9E3EDFD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Objectivity.AutoFixture.XUnit2.AutoMoq.Tests", "3. Duplicates\Code\Objectivity.AutoFixture.XUnit2.AutoMoq.Tests\Objectivity.AutoFixture.XUnit2.AutoMoq.Tests.csproj", "{B1851B64-3E9C-4EA2-A9F3-343B8D1EDB3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Objectivity.AutoFixture.XUnit2.AutoNSubstitute", "3. Duplicates\Code\Objectivity.AutoFixture.XUnit2.AutoNSubstitute\Objectivity.AutoFixture.XUnit2.AutoNSubstitute.csproj", "{9AEAFB2F-BBF0-4690-B269-AFF6265A9C71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Objectivity.AutoFixture.XUnit2.AutoNSubstitute.Tests", "3. Duplicates\Code\Objectivity.AutoFixture.XUnit2.AutoNSubstitute.Tests\Objectivity.AutoFixture.XUnit2.AutoNSubstitute.Tests.csproj", "{A4A22ABF-A244-406C-8486-371EE628096E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +39,30 @@ Global
 		{2720A57D-CA18-4DAF-B45E-3D1F49F74B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2720A57D-CA18-4DAF-B45E-3D1F49F74B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2720A57D-CA18-4DAF-B45E-3D1F49F74B2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45FF7820-4C37-4672-8193-645FBA5EFB48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45FF7820-4C37-4672-8193-645FBA5EFB48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45FF7820-4C37-4672-8193-645FBA5EFB48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45FF7820-4C37-4672-8193-645FBA5EFB48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC909047-5C17-4585-AE97-464CBF077587}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC909047-5C17-4585-AE97-464CBF077587}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC909047-5C17-4585-AE97-464CBF077587}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC909047-5C17-4585-AE97-464CBF077587}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7ADCA12-249E-4A13-90A3-16AD9E3EDFD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7ADCA12-249E-4A13-90A3-16AD9E3EDFD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7ADCA12-249E-4A13-90A3-16AD9E3EDFD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7ADCA12-249E-4A13-90A3-16AD9E3EDFD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1851B64-3E9C-4EA2-A9F3-343B8D1EDB3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1851B64-3E9C-4EA2-A9F3-343B8D1EDB3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1851B64-3E9C-4EA2-A9F3-343B8D1EDB3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1851B64-3E9C-4EA2-A9F3-343B8D1EDB3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AEAFB2F-BBF0-4690-B269-AFF6265A9C71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AEAFB2F-BBF0-4690-B269-AFF6265A9C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AEAFB2F-BBF0-4690-B269-AFF6265A9C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AEAFB2F-BBF0-4690-B269-AFF6265A9C71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4A22ABF-A244-406C-8486-371EE628096E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4A22ABF-A244-406C-8486-371EE628096E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4A22ABF-A244-406C-8486-371EE628096E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4A22ABF-A244-406C-8486-371EE628096E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,5 +70,11 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B01002E6-565A-4B5E-9683-2070C9B05CA8} = {2D6FF314-A195-4CC6-94EC-93BF2DC5C088}
 		{2720A57D-CA18-4DAF-B45E-3D1F49F74B2D} = {8D6F34A4-F37D-4657-90AF-259B113104FD}
+		{45FF7820-4C37-4672-8193-645FBA5EFB48} = {B9FBE740-0ABC-4CA9-8292-7C4D8F2D3F32}
+		{DC909047-5C17-4585-AE97-464CBF077587} = {B9FBE740-0ABC-4CA9-8292-7C4D8F2D3F32}
+		{B7ADCA12-249E-4A13-90A3-16AD9E3EDFD0} = {B9FBE740-0ABC-4CA9-8292-7C4D8F2D3F32}
+		{B1851B64-3E9C-4EA2-A9F3-343B8D1EDB3D} = {B9FBE740-0ABC-4CA9-8292-7C4D8F2D3F32}
+		{9AEAFB2F-BBF0-4690-B269-AFF6265A9C71} = {B9FBE740-0ABC-4CA9-8292-7C4D8F2D3F32}
+		{A4A22ABF-A244-406C-8486-371EE628096E} = {B9FBE740-0ABC-4CA9-8292-7C4D8F2D3F32}
 	EndGlobalSection
 EndGlobal
