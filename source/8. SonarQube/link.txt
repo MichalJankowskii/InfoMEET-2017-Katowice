@@ -1,0 +1,1 @@
+https://sonarqube.com/dashboard?id=org.eclipse.hudson%3Ahudson-parent
