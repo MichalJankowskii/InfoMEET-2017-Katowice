@@ -1,4 +1,4 @@
-﻿namespace Demo4
+﻿namespace Demo4B.StyleCopErrors
 {
     public class WithStyleCopErrors
     {
