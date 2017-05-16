@@ -1,0 +1,14 @@
+{
+    "typescript.tsdk": "./node_modules/typescript/lib",
+	"files.exclude": {
+		"node_modules/": true,
+		"dist/": true,
+		"webpack/": true,
+		".vscode/": true
+	}
+}
+
+{
+  "stylelint.enable": true,
+  "css.validate": false
+}
