@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Objectivity.AutoFixture.XUn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Objectivity.AutoFixture.XUnit2.AutoNSubstitute.Tests", "3. Duplicates\Code\Objectivity.AutoFixture.XUnit2.AutoNSubstitute.Tests\Objectivity.AutoFixture.XUnit2.AutoNSubstitute.Tests.csproj", "{A4A22ABF-A244-406C-8486-371EE628096E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Code analysis", "4. Code analysis", "{A153283D-AAA9-4011-82C6-0F56B79830F0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo4", "4. Code analysis\Demo4.csproj", "{F9A0E6D4-3FBB-4B4A-975C-31346A8B922C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,10 @@ Global
 		{A4A22ABF-A244-406C-8486-371EE628096E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4A22ABF-A244-406C-8486-371EE628096E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4A22ABF-A244-406C-8486-371EE628096E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9A0E6D4-3FBB-4B4A-975C-31346A8B922C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9A0E6D4-3FBB-4B4A-975C-31346A8B922C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9A0E6D4-3FBB-4B4A-975C-31346A8B922C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9A0E6D4-3FBB-4B4A-975C-31346A8B922C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,5 +84,6 @@ Global
 		{B1851B64-3E9C-4EA2-A9F3-343B8D1EDB3D} = {B9FBE740-0ABC-4CA9-8292-7C4D8F2D3F32}
 		{9AEAFB2F-BBF0-4690-B269-AFF6265A9C71} = {B9FBE740-0ABC-4CA9-8292-7C4D8F2D3F32}
 		{A4A22ABF-A244-406C-8486-371EE628096E} = {B9FBE740-0ABC-4CA9-8292-7C4D8F2D3F32}
+		{F9A0E6D4-3FBB-4B4A-975C-31346A8B922C} = {A153283D-AAA9-4011-82C6-0F56B79830F0}
 	EndGlobalSection
 EndGlobal
