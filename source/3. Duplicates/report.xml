@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DuplicatesReport ToolsVersion="108.0.20170428.80723">
+  <Statistics>
+    <CodebaseCost>19959</CodebaseCost>
+    <TotalDuplicatesCost>2446</TotalDuplicatesCost>
+    <TotalFragmentsCost>6898</TotalFragmentsCost>
+  </Statistics>
+  <Duplicates>
+    <Duplicate Cost="355">
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMocking.Core.Tests\Attributes\AutoMockingDataAttributeTests.cs</FileName>
+        <OffsetRange Start="3326" End="4078"></OffsetRange>
+        <LineRange Start="83" End="95"></LineRange>
+        <Text>var data = new[]
+            {
+                new object[] {1, 2, 3},
+                new object[] {4, 5, 6},
+                new object[] {7, 8, 9}
+            };
+            var fixture = new Mock&lt;IFixture&gt;();
+            var customizations = new List&lt;ICustomization&gt;();
+            fixture.Setup(x =&gt; x.Customize(It.IsAny&lt;ICustomization&gt;())).Callback&lt;ICustomization&gt;(customization =&gt; customizations.Add(customization));
+            var dataAttribute = new Mock&lt;DataAttribute&gt;();
+            dataAttribute.Setup(a =&gt; a.GetData(It.IsAny&lt;MethodInfo&gt;())).Returns(data);
+            var provider = new Mock&lt;IAutoFixtureAttributeProvider&gt;();
+            provider.Setup(p =&gt; p.GetAttribute(It.IsAny&lt;IFixture&gt;())).Returns(dataAttribute.Object);</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMoq.Tests\Attributes\AutoMoqDataAttributeTests.cs</FileName>
+        <OffsetRange Start="3316" End="4068"></OffsetRange>
+        <LineRange Start="84" End="96"></LineRange>
+        <Text>var data = new[]
+            {
+                new object[] {1, 2, 3},
+                new object[] {4, 5, 6},
+                new object[] {7, 8, 9}
+            };
+            var fixture = new Mock&lt;IFixture&gt;();
+            var customizations = new List&lt;ICustomization&gt;();
+            fixture.Setup(x =&gt; x.Customize(It.IsAny&lt;ICustomization&gt;())).Callback&lt;ICustomization&gt;(customization =&gt; customizations.Add(customization));
+            var dataAttribute = new Mock&lt;DataAttribute&gt;();
+            dataAttribute.Setup(a =&gt; a.GetData(It.IsAny&lt;MethodInfo&gt;())).Returns(data);
+            var provider = new Mock&lt;IAutoFixtureAttributeProvider&gt;();
+            provider.Setup(p =&gt; p.GetAttribute(It.IsAny&lt;IFixture&gt;())).Returns(dataAttribute.Object);</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoNSubstitute.Tests\Attributes\AutoNSubstituteDataAttributeTests.cs</FileName>
+        <OffsetRange Start="3396" End="4148"></OffsetRange>
+        <LineRange Start="84" End="96"></LineRange>
+        <Text>var data = new[]
+            {
+                new object[] {1, 2, 3},
+                new object[] {4, 5, 6},
+                new object[] {7, 8, 9}
+            };
+            var fixture = new Mock&lt;IFixture&gt;();
+            var customizations = new List&lt;ICustomization&gt;();
+            fixture.Setup(x =&gt; x.Customize(It.IsAny&lt;ICustomization&gt;())).Callback&lt;ICustomization&gt;(customization =&gt; customizations.Add(customization));
+            var dataAttribute = new Mock&lt;DataAttribute&gt;();
+            dataAttribute.Setup(a =&gt; a.GetData(It.IsAny&lt;MethodInfo&gt;())).Returns(data);
+            var provider = new Mock&lt;IAutoFixtureAttributeProvider&gt;();
+            provider.Setup(p =&gt; p.GetAttribute(It.IsAny&lt;IFixture&gt;())).Returns(dataAttribute.Object);</Text>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="355">
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMocking.Core.Tests\Attributes\InlineAutoMockingDataAttributeTests.cs</FileName>
+        <OffsetRange Start="6994" End="7752"></OffsetRange>
+        <LineRange Start="150" End="162"></LineRange>
+        <Text>var data = new[]
+            {
+                new object[] {1, 2, 3},
+                new object[] {4, 5, 6},
+                new object[] {7, 8, 9}
+            };
+            var fixture = new Mock&lt;IFixture&gt;();
+            var customizations = new List&lt;ICustomization&gt;();
+            fixture.Setup(x =&gt; x.Customize(It.IsAny&lt;ICustomization&gt;())).Callback&lt;ICustomization&gt;(customization =&gt; customizations.Add(customization));
+            var dataAttribute = new Mock&lt;DataAttribute&gt;();
+            dataAttribute.Setup(a =&gt; a.GetData(It.IsAny&lt;MethodInfo&gt;())).Returns(data);
+            var provider = new Mock&lt;IAutoFixtureInlineAttributeProvider&gt;();
+            provider.Setup(p =&gt; p.GetAttribute(It.IsAny&lt;IFixture&gt;())).Returns(dataAttribute.Object);</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMoq.Tests\Attributes\InlineAutoMoqDataAttributeTests.cs</FileName>
+        <OffsetRange Start="6928" End="7686"></OffsetRange>
+        <LineRange Start="151" End="163"></LineRange>
+        <Text>var data = new[]
+            {
+                new object[] {1, 2, 3},
+                new object[] {4, 5, 6},
+                new object[] {7, 8, 9}
+            };
+            var fixture = new Mock&lt;IFixture&gt;();
+            var customizations = new List&lt;ICustomization&gt;();
+            fixture.Setup(x =&gt; x.Customize(It.IsAny&lt;ICustomization&gt;())).Callback&lt;ICustomization&gt;(customization =&gt; customizations.Add(customization));
+            var dataAttribute = new Mock&lt;DataAttribute&gt;();
+            dataAttribute.Setup(a =&gt; a.GetData(It.IsAny&lt;MethodInfo&gt;())).Returns(data);
+            var provider = new Mock&lt;IAutoFixtureInlineAttributeProvider&gt;();
+            provider.Setup(p =&gt; p.GetAttribute(It.IsAny&lt;IFixture&gt;())).Returns(dataAttribute.Object);</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoNSubstitute.Tests\Attributes\InlineAutoNSubstituteDataAttributeTests.cs</FileName>
+        <OffsetRange Start="7040" End="7798"></OffsetRange>
+        <LineRange Start="151" End="163"></LineRange>
+        <Text>var data = new[]
+            {
+                new object[] {1, 2, 3},
+                new object[] {4, 5, 6},
+                new object[] {7, 8, 9}
+            };
+            var fixture = new Mock&lt;IFixture&gt;();
+            var customizations = new List&lt;ICustomization&gt;();
+            fixture.Setup(x =&gt; x.Customize(It.IsAny&lt;ICustomization&gt;())).Callback&lt;ICustomization&gt;(customization =&gt; customizations.Add(customization));
+            var dataAttribute = new Mock&lt;DataAttribute&gt;();
+            dataAttribute.Setup(a =&gt; a.GetData(It.IsAny&lt;MethodInfo&gt;())).Returns(data);
+            var provider = new Mock&lt;IAutoFixtureInlineAttributeProvider&gt;();
+            provider.Setup(p =&gt; p.GetAttribute(It.IsAny&lt;IFixture&gt;())).Returns(dataAttribute.Object);</Text>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="328">
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMoq.Tests\Attributes\MemberAutoMoqDataAttributeTests.cs</FileName>
+        <OffsetRange Start="5429" End="5906"></OffsetRange>
+        <LineRange Start="129" End="138"></LineRange>
+        <Text>var testData = TestData.ToList();
+
+            // Act
+            // Assert
+            first.Should().BeOneOf((int)testData[0][0], (int)testData[1][0], (int)testData[2][0]);
+            second.Should().BeOneOf((int)testData[0][1], (int)testData[1][1], (int)testData[2][1]);
+            third.Should().BeOneOf((int)testData[0][2], (int)testData[1][2], (int)testData[2][2]);
+            fourth.Should().NotBe(default(int));
+
+            disposable.Should().NotBeNull();</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoNSubstitute.Tests\Attributes\MemberAutoNSubstituteDataAttributeTests.cs</FileName>
+        <OffsetRange Start="5562" End="6039"></OffsetRange>
+        <LineRange Start="129" End="138"></LineRange>
+        <Text>var testData = TestData.ToList();
+
+            // Act
+            // Assert
+            first.Should().BeOneOf((int)testData[0][0], (int)testData[1][0], (int)testData[2][0]);
+            second.Should().BeOneOf((int)testData[0][1], (int)testData[1][1], (int)testData[2][1]);
+            third.Should().BeOneOf((int)testData[0][2], (int)testData[1][2], (int)testData[2][2]);
+            fourth.Should().NotBe(default(int));
+
+            disposable.Should().NotBeNull();</Text>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="190">
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMocking.Core.Tests\Attributes\AutoMockingDataAttributeTests.cs</FileName>
+        <OffsetRange Start="4285" End="4894"></OffsetRange>
+        <LineRange Start="100" End="112"></LineRange>
+        <Text>var methodInfo = typeof(AutoMockingDataAttributeTests).GetMethod("TestMethod");
+
+            // Act
+            var result = attribute.GetData(methodInfo);
+
+            // Assert
+            result.Should().BeSameAs(data);
+            provider.VerifyAll();
+            dataAttribute.VerifyAll();
+
+            customizations[0].Should().BeOfType&lt;AutoMockingTestHelperDataCustomization&gt; ();
+            customizations[1].Should().BeOfType&lt;IgnoreVirtualMembersCustomization&gt;();
+            ((IgnoreVirtualMembersCustomization)customizations[1]).IgnoreVirtualMembers.Should().Be(ignoreVirtualMembers);</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMocking.Core.Tests\Attributes\InlineAutoMockingDataAttributeTests.cs</FileName>
+        <OffsetRange Start="7965" End="8573"></OffsetRange>
+        <LineRange Start="167" End="179"></LineRange>
+        <Text>var methodInfo = typeof(AutoMockingDataAttributeTests).GetMethod("TestMethod");
+
+            // Act
+            var result = attribute.GetData(methodInfo);
+
+            // Assert
+            result.Should().BeSameAs(data);
+            provider.VerifyAll();
+            dataAttribute.VerifyAll();
+
+            customizations[0].Should().BeOfType&lt;AutoMockingTestHelperDataCustomization&gt;();
+            customizations[1].Should().BeOfType&lt;IgnoreVirtualMembersCustomization&gt;();
+            ((IgnoreVirtualMembersCustomization)customizations[1]).IgnoreVirtualMembers.Should().Be(ignoreVirtualMembers);</Text>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="190">
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMoq.Tests\Attributes\AutoMoqDataAttributeTests.cs</FileName>
+        <OffsetRange Start="4261" End="4851"></OffsetRange>
+        <LineRange Start="101" End="113"></LineRange>
+        <Text>var methodInfo = typeof(AutoMoqDataAttributeTests).GetMethod("TestMethod");
+
+            // Act
+            var result = attribute.GetData(methodInfo);
+
+            // Assert
+            result.Should().BeSameAs(data);
+            provider.VerifyAll();
+            dataAttribute.VerifyAll();
+
+            customizations[0].Should().BeOfType&lt;AutoMoqDataCustomization&gt;();
+            customizations[1].Should().BeOfType&lt;IgnoreVirtualMembersCustomization&gt;();
+            ((IgnoreVirtualMembersCustomization)customizations[1]).IgnoreVirtualMembers.Should().Be(ignoreVirtualMembers);</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMoq.Tests\Attributes\InlineAutoMoqDataAttributeTests.cs</FileName>
+        <OffsetRange Start="7885" End="8475"></OffsetRange>
+        <LineRange Start="168" End="180"></LineRange>
+        <Text>var methodInfo = typeof(AutoMoqDataAttributeTests).GetMethod("TestMethod");
+
+            // Act
+            var result = attribute.GetData(methodInfo);
+
+            // Assert
+            result.Should().BeSameAs(data);
+            provider.VerifyAll();
+            dataAttribute.VerifyAll();
+
+            customizations[0].Should().BeOfType&lt;AutoMoqDataCustomization&gt;();
+            customizations[1].Should().BeOfType&lt;IgnoreVirtualMembersCustomization&gt;();
+            ((IgnoreVirtualMembersCustomization)customizations[1]).IgnoreVirtualMembers.Should().Be(ignoreVirtualMembers);</Text>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="190">
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoNSubstitute.Tests\Attributes\AutoNSubstituteDataAttributeTests.cs</FileName>
+        <OffsetRange Start="4349" End="4955"></OffsetRange>
+        <LineRange Start="101" End="113"></LineRange>
+        <Text>var methodInfo = typeof(AutoNSubstituteDataAttributeTests).GetMethod("TestMethod");
+
+            // Act
+            var result = attribute.GetData(methodInfo);
+
+            // Assert
+            result.Should().BeSameAs(data);
+            provider.VerifyAll();
+            dataAttribute.VerifyAll();
+
+            customizations[0].Should().BeOfType&lt;AutoNSubstituteDataCustomization&gt;();
+            customizations[1].Should().BeOfType&lt;IgnoreVirtualMembersCustomization&gt;();
+            ((IgnoreVirtualMembersCustomization)customizations[1]).IgnoreVirtualMembers.Should().Be(ignoreVirtualMembers);</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoNSubstitute.Tests\Attributes\InlineAutoNSubstituteDataAttributeTests.cs</FileName>
+        <OffsetRange Start="8005" End="8611"></OffsetRange>
+        <LineRange Start="168" End="180"></LineRange>
+        <Text>var methodInfo = typeof(AutoNSubstituteDataAttributeTests).GetMethod("TestMethod");
+
+            // Act
+            var result = attribute.GetData(methodInfo);
+
+            // Assert
+            result.Should().BeSameAs(data);
+            provider.VerifyAll();
+            dataAttribute.VerifyAll();
+
+            customizations[0].Should().BeOfType&lt;AutoNSubstituteDataCustomization&gt;();
+            customizations[1].Should().BeOfType&lt;IgnoreVirtualMembersCustomization&gt;();
+            ((IgnoreVirtualMembersCustomization)customizations[1]).IgnoreVirtualMembers.Should().Be(ignoreVirtualMembers);</Text>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="117">
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMocking.Core.Tests\Attributes\MemberAutoMockingDataAttributeTests.cs</FileName>
+        <OffsetRange Start="1951" End="2199"></OffsetRange>
+        <LineRange Start="55" End="57"></LineRange>
+        <Text>var fixture = new Mock&lt;IFixture&gt;();
+            var customizations = new List&lt;ICustomization&gt;();
+            fixture.Setup(x =&gt; x.Customize(It.IsAny&lt;ICustomization&gt;())).Callback&lt;ICustomization&gt;(customization =&gt; customizations.Add(customization));</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMoq.Tests\Attributes\MemberAutoMoqDataAttributeTests.cs</FileName>
+        <OffsetRange Start="3115" End="3363"></OffsetRange>
+        <LineRange Start="81" End="83"></LineRange>
+        <Text>var fixture = new Mock&lt;IFixture&gt;();
+            var customizations = new List&lt;ICustomization&gt;();
+            fixture.Setup(x =&gt; x.Customize(It.IsAny&lt;ICustomization&gt;())).Callback&lt;ICustomization&gt;(customization =&gt; customizations.Add(customization));</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoNSubstitute.Tests\Attributes\MemberAutoNSubstituteDataAttributeTests.cs</FileName>
+        <OffsetRange Start="3200" End="3448"></OffsetRange>
+        <LineRange Start="81" End="83"></LineRange>
+        <Text>var fixture = new Mock&lt;IFixture&gt;();
+            var customizations = new List&lt;ICustomization&gt;();
+            fixture.Setup(x =&gt; x.Customize(It.IsAny&lt;ICustomization&gt;())).Callback&lt;ICustomization&gt;(customization =&gt; customizations.Add(customization));</Text>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="104">
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMocking.Core.Tests\Attributes\MemberAutoMockingDataAttributeTests.cs</FileName>
+        <OffsetRange Start="481" End="675"></OffsetRange>
+        <LineRange Start="17" End="22"></LineRange>
+        <Text>public static IEnumerable&lt;object[]&gt; TestData { get; } = new[]
+        {
+            new object[] {1, 2, 3},
+            new object[] {4, 5, 6},
+            new object[] {7, 8, 9}
+        };</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMoq.Tests\Attributes\MemberAutoMoqDataAttributeTests.cs</FileName>
+        <OffsetRange Start="539" End="733"></OffsetRange>
+        <LineRange Start="19" End="24"></LineRange>
+        <Text>public static IEnumerable&lt;object[]&gt; TestData { get; } = new[]
+        {
+            new object[] {1, 2, 3},
+            new object[] {4, 5, 6},
+            new object[] {7, 8, 9}
+        };</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoNSubstitute.Tests\Attributes\MemberAutoNSubstituteDataAttributeTests.cs</FileName>
+        <OffsetRange Start="587" End="781"></OffsetRange>
+        <LineRange Start="19" End="24"></LineRange>
+        <Text>public static IEnumerable&lt;object[]&gt; TestData { get; } = new[]
+        {
+            new object[] {1, 2, 3},
+            new object[] {4, 5, 6},
+            new object[] {7, 8, 9}
+        };</Text>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="104">
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMocking.Core.Tests\Attributes\MemberAutoMockingDataAttributeTests.cs</FileName>
+        <OffsetRange Start="687" End="1027"></OffsetRange>
+        <LineRange Start="24" End="33"></LineRange>
+        <Text>public int TestMethod(int first, int second, int third, int fourth, IDisposable disposable)
+        {
+            if (disposable == null)
+            {
+                throw new ArgumentNullException(nameof(disposable));
+            }
+
+            disposable.Dispose();
+            return first + second + third + fourth;
+        }</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMoq.Tests\Attributes\MemberAutoMoqDataAttributeTests.cs</FileName>
+        <OffsetRange Start="745" End="1085"></OffsetRange>
+        <LineRange Start="26" End="35"></LineRange>
+        <Text>public int TestMethod(int first, int second, int third, int fourth, IDisposable disposable)
+        {
+            if (disposable == null)
+            {
+                throw new ArgumentNullException(nameof(disposable));
+            }
+
+            disposable.Dispose();
+            return first + second + third + fourth;
+        }</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoNSubstitute.Tests\Attributes\MemberAutoNSubstituteDataAttributeTests.cs</FileName>
+        <OffsetRange Start="793" End="1133"></OffsetRange>
+        <LineRange Start="26" End="35"></LineRange>
+        <Text>public int TestMethod(int first, int second, int third, int fourth, IDisposable disposable)
+        {
+            if (disposable == null)
+            {
+                throw new ArgumentNullException(nameof(disposable));
+            }
+
+            disposable.Dispose();
+            return first + second + third + fourth;
+        }</Text>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="93">
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMocking.Core.Tests\Attributes\InlineAutoMockingDataAttributeTests.cs</FileName>
+        <OffsetRange Start="4350" End="4578"></OffsetRange>
+        <LineRange Start="95" End="98"></LineRange>
+        <Text>attribute.Fixture.Should().Be(fixture);
+            attribute.IgnoreVirtualMembers.Should().BeFalse();
+            attribute.Provider.Should().Be(provider);
+            attribute.Values.Should().BeEquivalentTo(initialValues);</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMoq.Tests\Attributes\InlineAutoMoqDataAttributeTests.cs</FileName>
+        <OffsetRange Start="4326" End="4554"></OffsetRange>
+        <LineRange Start="96" End="99"></LineRange>
+        <Text>attribute.Fixture.Should().Be(fixture);
+            attribute.IgnoreVirtualMembers.Should().BeFalse();
+            attribute.Provider.Should().Be(provider);
+            attribute.Values.Should().BeEquivalentTo(initialValues);</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoNSubstitute.Tests\Attributes\InlineAutoNSubstituteDataAttributeTests.cs</FileName>
+        <OffsetRange Start="4414" End="4642"></OffsetRange>
+        <LineRange Start="96" End="99"></LineRange>
+        <Text>attribute.Fixture.Should().Be(fixture);
+            attribute.IgnoreVirtualMembers.Should().BeFalse();
+            attribute.Provider.Should().Be(provider);
+            attribute.Values.Should().BeEquivalentTo(initialValues);</Text>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="93">
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMocking.Core.Tests\Attributes\InlineAutoMockingDataAttributeTests.cs</FileName>
+        <OffsetRange Start="3375" End="3586"></OffsetRange>
+        <LineRange Start="77" End="80"></LineRange>
+        <Text>attribute.Fixture.Should().Be(fixture);
+            attribute.IgnoreVirtualMembers.Should().BeFalse();
+            attribute.Provider.Should().Be(provider);
+            attribute.Values.Should().HaveCount(0);</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMocking.Core.Tests\Attributes\InlineAutoMockingDataAttributeTests.cs</FileName>
+        <OffsetRange Start="5317" End="5528"></OffsetRange>
+        <LineRange Start="113" End="116"></LineRange>
+        <Text>attribute.Fixture.Should().Be(fixture);
+            attribute.IgnoreVirtualMembers.Should().BeFalse();
+            attribute.Provider.Should().Be(provider);
+            attribute.Values.Should().HaveCount(0);</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMoq.Tests\Attributes\InlineAutoMoqDataAttributeTests.cs</FileName>
+        <OffsetRange Start="3365" End="3576"></OffsetRange>
+        <LineRange Start="78" End="81"></LineRange>
+        <Text>attribute.Fixture.Should().Be(fixture);
+            attribute.IgnoreVirtualMembers.Should().BeFalse();
+            attribute.Provider.Should().Be(provider);
+            attribute.Values.Should().HaveCount(0);</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMoq.Tests\Attributes\InlineAutoMoqDataAttributeTests.cs</FileName>
+        <OffsetRange Start="5279" End="5490"></OffsetRange>
+        <LineRange Start="114" End="117"></LineRange>
+        <Text>attribute.Fixture.Should().Be(fixture);
+            attribute.IgnoreVirtualMembers.Should().BeFalse();
+            attribute.Provider.Should().Be(provider);
+            attribute.Values.Should().HaveCount(0);</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoNSubstitute.Tests\Attributes\InlineAutoNSubstituteDataAttributeTests.cs</FileName>
+        <OffsetRange Start="3445" End="3656"></OffsetRange>
+        <LineRange Start="78" End="81"></LineRange>
+        <Text>attribute.Fixture.Should().Be(fixture);
+            attribute.IgnoreVirtualMembers.Should().BeFalse();
+            attribute.Provider.Should().Be(provider);
+            attribute.Values.Should().HaveCount(0);</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoNSubstitute.Tests\Attributes\InlineAutoNSubstituteDataAttributeTests.cs</FileName>
+        <OffsetRange Start="5375" End="5586"></OffsetRange>
+        <LineRange Start="114" End="117"></LineRange>
+        <Text>attribute.Fixture.Should().Be(fixture);
+            attribute.IgnoreVirtualMembers.Should().BeFalse();
+            attribute.Provider.Should().Be(provider);
+            attribute.Values.Should().HaveCount(0);</Text>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="87">
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMocking.Core.Tests\Attributes\InlineAutoMockingDataAttributeTests.cs</FileName>
+        <OffsetRange Start="1793" End="2020"></OffsetRange>
+        <LineRange Start="44" End="47"></LineRange>
+        <Text>attribute.Fixture.Should().NotBeNull();
+            attribute.IgnoreVirtualMembers.Should().BeFalse();
+            attribute.Provider.Should().NotBeNull();
+            attribute.Values.Should().BeEquivalentTo(initialValues);</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMoq.Tests\Attributes\InlineAutoMoqDataAttributeTests.cs</FileName>
+        <OffsetRange Start="1811" End="2038"></OffsetRange>
+        <LineRange Start="45" End="48"></LineRange>
+        <Text>attribute.Fixture.Should().NotBeNull();
+            attribute.IgnoreVirtualMembers.Should().BeFalse();
+            attribute.Provider.Should().NotBeNull();
+            attribute.Values.Should().BeEquivalentTo(initialValues);</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoNSubstitute.Tests\Attributes\InlineAutoNSubstituteDataAttributeTests.cs</FileName>
+        <OffsetRange Start="1875" End="2102"></OffsetRange>
+        <LineRange Start="45" End="48"></LineRange>
+        <Text>attribute.Fixture.Should().NotBeNull();
+            attribute.IgnoreVirtualMembers.Should().BeFalse();
+            attribute.Provider.Should().NotBeNull();
+            attribute.Values.Should().BeEquivalentTo(initialValues);</Text>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="87">
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMocking.Core.Tests\Attributes\InlineAutoMockingDataAttributeTests.cs</FileName>
+        <OffsetRange Start="979" End="1189"></OffsetRange>
+        <LineRange Start="28" End="31"></LineRange>
+        <Text>attribute.Fixture.Should().NotBeNull();
+            attribute.IgnoreVirtualMembers.Should().BeFalse();
+            attribute.Provider.Should().NotBeNull();
+            attribute.Values.Should().HaveCount(0);</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMocking.Core.Tests\Attributes\InlineAutoMockingDataAttributeTests.cs</FileName>
+        <OffsetRange Start="2552" End="2762"></OffsetRange>
+        <LineRange Start="60" End="63"></LineRange>
+        <Text>attribute.Fixture.Should().NotBeNull();
+            attribute.IgnoreVirtualMembers.Should().BeFalse();
+            attribute.Provider.Should().NotBeNull();
+            attribute.Values.Should().HaveCount(0);</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMoq.Tests\Attributes\InlineAutoMoqDataAttributeTests.cs</FileName>
+        <OffsetRange Start="1011" End="1221"></OffsetRange>
+        <LineRange Start="29" End="32"></LineRange>
+        <Text>attribute.Fixture.Should().NotBeNull();
+            attribute.IgnoreVirtualMembers.Should().BeFalse();
+            attribute.Provider.Should().NotBeNull();
+            attribute.Values.Should().HaveCount(0);</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMoq.Tests\Attributes\InlineAutoMoqDataAttributeTests.cs</FileName>
+        <OffsetRange Start="2556" End="2766"></OffsetRange>
+        <LineRange Start="61" End="64"></LineRange>
+        <Text>attribute.Fixture.Should().NotBeNull();
+            attribute.IgnoreVirtualMembers.Should().BeFalse();
+            attribute.Provider.Should().NotBeNull();
+            attribute.Values.Should().HaveCount(0);</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoNSubstitute.Tests\Attributes\InlineAutoNSubstituteDataAttributeTests.cs</FileName>
+        <OffsetRange Start="1067" End="1277"></OffsetRange>
+        <LineRange Start="29" End="32"></LineRange>
+        <Text>attribute.Fixture.Should().NotBeNull();
+            attribute.IgnoreVirtualMembers.Should().BeFalse();
+            attribute.Provider.Should().NotBeNull();
+            attribute.Values.Should().HaveCount(0);</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoNSubstitute.Tests\Attributes\InlineAutoNSubstituteDataAttributeTests.cs</FileName>
+        <OffsetRange Start="2628" End="2838"></OffsetRange>
+        <LineRange Start="61" End="64"></LineRange>
+        <Text>attribute.Fixture.Should().NotBeNull();
+            attribute.IgnoreVirtualMembers.Should().BeFalse();
+            attribute.Provider.Should().NotBeNull();
+            attribute.Values.Should().HaveCount(0);</Text>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="82">
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMoq.Tests\Attributes\MemberAutoMoqDataAttributeTests.cs</FileName>
+        <OffsetRange Start="2373" End="2580"></OffsetRange>
+        <LineRange Start="66" End="70"></LineRange>
+        <Text>var source = TestData.ElementAt(i);
+                var result = data.ElementAt(i);
+
+                result.Should().HaveCount(numberOfParameters);
+                result.Should().ContainInOrder(source);</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoNSubstitute.Tests\Attributes\MemberAutoNSubstituteDataAttributeTests.cs</FileName>
+        <OffsetRange Start="2445" End="2652"></OffsetRange>
+        <LineRange Start="66" End="70"></LineRange>
+        <Text>var source = TestData.ElementAt(i);
+                var result = data.ElementAt(i);
+
+                result.Should().HaveCount(numberOfParameters);
+                result.Should().ContainInOrder(source);</Text>
+      </Fragment>
+    </Duplicate>
+    <Duplicate Cost="71">
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMocking.Core.Tests\Attributes\MemberAutoMockingDataAttributeTests.cs</FileName>
+        <OffsetRange Start="2691" End="2888"></OffsetRange>
+        <LineRange Start="70" End="71"></LineRange>
+        <Text>customizations[1].Should().BeOfType&lt;IgnoreVirtualMembersCustomization&gt;();
+            ((IgnoreVirtualMembersCustomization)customizations[1]).IgnoreVirtualMembers.Should().Be(ignoreVirtualMembers);</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoMoq.Tests\Attributes\MemberAutoMoqDataAttributeTests.cs</FileName>
+        <OffsetRange Start="3823" End="4020"></OffsetRange>
+        <LineRange Start="96" End="97"></LineRange>
+        <Text>customizations[1].Should().BeOfType&lt;IgnoreVirtualMembersCustomization&gt;();
+            ((IgnoreVirtualMembersCustomization)customizations[1]).IgnoreVirtualMembers.Should().Be(ignoreVirtualMembers);</Text>
+      </Fragment>
+      <Fragment>
+        <FileName>Code\Objectivity.AutoFixture.XUnit2.AutoNSubstitute.Tests\Attributes\MemberAutoNSubstituteDataAttributeTests.cs</FileName>
+        <OffsetRange Start="3932" End="4129"></OffsetRange>
+        <LineRange Start="96" End="97"></LineRange>
+        <Text>customizations[1].Should().BeOfType&lt;IgnoreVirtualMembersCustomization&gt;();
+            ((IgnoreVirtualMembersCustomization)customizations[1]).IgnoreVirtualMembers.Should().Be(ignoreVirtualMembers);</Text>
+      </Fragment>
+    </Duplicate>
+  </Duplicates>
+</DuplicatesReport>
