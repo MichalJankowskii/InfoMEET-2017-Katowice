@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html data-ng-app="coverageApp">
+<head>
+<meta charset="utf-8" />
+<title>Summary - Coverage Report</title>
+<link rel="stylesheet" type="text/css" href="report.css" />
+</head><body data-ng-controller="SummaryViewCtrl"><div class="container">
+<h1>Summary</h1>
+<table class="overview">
+<colgroup>
+<col style="width: 135px;" />
+<col />
+</colgroup>
+<tbody>
+<tr><th>Generated on:</th><td>18.05.2017 - 21:28:29</td></tr>
+<tr><th>Parser:</th><td>OpenCoverParser</td></tr>
+<tr><th>Assemblies:</th><td>4</td></tr>
+<tr><th>Classes:</th><td>5</td></tr>
+<tr><th>Files:</th><td>5</td></tr>
+<tr><th>Covered lines:</th><td>16</td></tr>
+<tr><th>Uncovered lines:</th><td>24</td></tr>
+<tr><th>Coverable lines:</th><td>40</td></tr>
+<tr><th>Total lines:</th><td>107</td></tr>
+<tr><th>Line coverage:</th><td>40%</td></tr>
+<tr><th>Branch coverage:</th><td>16.6%</td></tr>
+</tbody>
+</table>
+<h1>Assemblies</h1>
+<div data-ng-if="filteringEnabled" data-reactive-table data-data="assemblies"></div>
+<div data-ng-if="!filteringEnabled">
+<div id="filterButtonContainer" class="customizebox" style="display: none;"><input data-ng-click="enableFiltering()" value="Enable filtering" title="This may take some time since the report contains many classes." type="submit" /></div>
+<script type="text/javascript">
+/* <![CDATA[ */
+document.getElementById('filterButtonContainer').style.display = 'block';
+/* ]]> */
+</script>
+</div>
+<table data-ng-if="!filteringEnabled" class="overview">
+<colgroup>
+<col />
+<col style="width: 90px;" />
+<col style="width: 105px;" />
+<col style="width: 100px;" />
+<col style="width: 70px;" />
+<col style="width: 60px;" />
+<col style="width: 112px;" />
+<col style="width: 60px;" />
+<col style="width: 112px;" />
+</colgroup>
+<thead><tr><th>Name</th><th class="right">Covered</th><th class="right">Uncovered</th><th class="right">Coverable</th><th class="right">Total</th><th class="center" colspan="2">Line coverage</th><th class="center" colspan="2">Branch coverage</th></tr></thead>
+<tbody>
+<tr><th>BestPractices</th><th class="right">16</th><th class="right">24</th><th class="right">40</th><th class="right">107</th><th title="LineCoverage" class="right">40%</th><th><table class="coverage"><tr><td class="green" style="width: 40px;">&nbsp;</td><td class="red" style="width: 60px;">&nbsp;</td></tr></table></th><th class="right">16.6%</th><th><table class="coverage"><tr><td class="green" style="width: 17px;">&nbsp;</td><td class="red" style="width: 83px;">&nbsp;</td></tr></table></th></tr>
+<tr><td><a href="BestPractices_BetterTimeOfDayProvider.htm">BestPractices.AfterRefactoring.BetterTimeOfDayProvider</a></td><td class="right">11</td><td class="right">6</td><td class="right">17</td><td class="right">38</td><td title="LineCoverage" class="right">64.7%</td><td><table class="coverage"><tr><td class="green" style="width: 65px;">&nbsp;</td><td class="red" style="width: 35px;">&nbsp;</td></tr></table></td><td class="right">33.3%</td><td><table class="coverage"><tr><td class="green" style="width: 33px;">&nbsp;</td><td class="red" style="width: 67px;">&nbsp;</td></tr></table></td></tr>
+<tr><td><a href="BestPractices_BetterYearProvider.htm">BestPractices.AfterRefactoring.BetterYearProvider</a></td><td class="right">5</td><td class="right">2</td><td class="right">7</td><td class="right">18</td><td title="LineCoverage" class="right">71.4%</td><td><table class="coverage"><tr><td class="green" style="width: 71px;">&nbsp;</td><td class="red" style="width: 29px;">&nbsp;</td></tr></table></td><td class="right"></td><td><table class="coverage"><tr><td class="gray" style="width: 100px;">&nbsp;</td></tr></table></td></tr>
+<tr><td><a href="BestPractices_DateTimeProvider.htm">BestPractices.AfterRefactoring.DateTimeProvider</a></td><td class="right">0</td><td class="right">1</td><td class="right">1</td><td class="right">9</td><td title="LineCoverage" class="right">0%</td><td><table class="coverage"><tr><td class="red" style="width: 100px;">&nbsp;</td></tr></table></td><td class="right"></td><td><table class="coverage"><tr><td class="gray" style="width: 100px;">&nbsp;</td></tr></table></td></tr>
+<tr><td><a href="BestPractices_TimeOfDayProvider.htm">BestPractices.StartPoint.TimeOfDayProvider</a></td><td class="right">0</td><td class="right">13</td><td class="right">13</td><td class="right">31</td><td title="LineCoverage" class="right">0%</td><td><table class="coverage"><tr><td class="red" style="width: 100px;">&nbsp;</td></tr></table></td><td class="right">0%</td><td><table class="coverage"><tr><td class="red" style="width: 100px;">&nbsp;</td></tr></table></td></tr>
+<tr><td><a href="BestPractices_YearProvider.htm">BestPractices.StartPoint.YearProvider</a></td><td class="right">0</td><td class="right">2</td><td class="right">2</td><td class="right">11</td><td title="LineCoverage" class="right">0%</td><td><table class="coverage"><tr><td class="red" style="width: 100px;">&nbsp;</td></tr></table></td><td class="right"></td><td><table class="coverage"><tr><td class="gray" style="width: 100px;">&nbsp;</td></tr></table></td></tr>
+<tr><th>xunit.assert</th><th class="right">0</th><th class="right">0</th><th class="right">0</th><th class="right">0</th><th title="" class="right"></th><th><table class="coverage"><tr><td class="gray" style="width: 100px;">&nbsp;</td></tr></table></th><th class="right"></th><th><table class="coverage"><tr><td class="gray" style="width: 100px;">&nbsp;</td></tr></table></th></tr>
+<tr><th>xunit.core</th><th class="right">0</th><th class="right">0</th><th class="right">0</th><th class="right">0</th><th title="" class="right"></th><th><table class="coverage"><tr><td class="gray" style="width: 100px;">&nbsp;</td></tr></table></th><th class="right"></th><th><table class="coverage"><tr><td class="gray" style="width: 100px;">&nbsp;</td></tr></table></th></tr>
+<tr><th>xunit.execution.desktop</th><th class="right">0</th><th class="right">0</th><th class="right">0</th><th class="right">0</th><th title="" class="right"></th><th><table class="coverage"><tr><td class="gray" style="width: 100px;">&nbsp;</td></tr></table></th><th class="right"></th><th><table class="coverage"><tr><td class="gray" style="width: 100px;">&nbsp;</td></tr></table></th></tr>
+</tbody>
+</table>
+<script type="text/javascript">
+/* <![CDATA[ */
+var assemblies = [
+  {
+    "name" : "BestPractices",
+    "classes" : [
+    {  "name" : "BestPractices.AfterRefactoring.BetterTimeOfDayProvider", "reportPath" : "BestPractices_BetterTimeOfDayProvider.htm", "coveredLines" : 11, "uncoveredLines" : 6, "coverableLines" : 17, "totalLines" : 38, "coverageType" : "LineCoverage", "methodCoverage" : "-", "coveredBranches" : 2, "totalBranches" : 6, "lineCoverageHistory" : [], "branchCoverageHistory" : [] },
+    {  "name" : "BestPractices.AfterRefactoring.BetterYearProvider", "reportPath" : "BestPractices_BetterYearProvider.htm", "coveredLines" : 5, "uncoveredLines" : 2, "coverableLines" : 7, "totalLines" : 18, "coverageType" : "LineCoverage", "methodCoverage" : "-", "coveredBranches" : 0, "totalBranches" : 0, "lineCoverageHistory" : [], "branchCoverageHistory" : [] },
+    {  "name" : "BestPractices.AfterRefactoring.DateTimeProvider", "reportPath" : "BestPractices_DateTimeProvider.htm", "coveredLines" : 0, "uncoveredLines" : 1, "coverableLines" : 1, "totalLines" : 9, "coverageType" : "LineCoverage", "methodCoverage" : "-", "coveredBranches" : 0, "totalBranches" : 0, "lineCoverageHistory" : [], "branchCoverageHistory" : [] },
+    {  "name" : "BestPractices.StartPoint.TimeOfDayProvider", "reportPath" : "BestPractices_TimeOfDayProvider.htm", "coveredLines" : 0, "uncoveredLines" : 13, "coverableLines" : 13, "totalLines" : 31, "coverageType" : "LineCoverage", "methodCoverage" : "-", "coveredBranches" : 0, "totalBranches" : 6, "lineCoverageHistory" : [], "branchCoverageHistory" : [] },
+    {  "name" : "BestPractices.StartPoint.YearProvider", "reportPath" : "BestPractices_YearProvider.htm", "coveredLines" : 0, "uncoveredLines" : 2, "coverableLines" : 2, "totalLines" : 11, "coverageType" : "LineCoverage", "methodCoverage" : "-", "coveredBranches" : 0, "totalBranches" : 0, "lineCoverageHistory" : [], "branchCoverageHistory" : [] },
+  ]},
+  {
+    "name" : "xunit.assert",
+    "classes" : [
+  ]},
+  {
+    "name" : "xunit.core",
+    "classes" : [
+  ]},
+  {
+    "name" : "xunit.execution.desktop",
+    "classes" : [
+  ]},
+];
+/* ]]> */
+</script>
+<div class="footer">Generated by: ReportGenerator 2.3.5.0<br />18.05.2017 - 21:28:29<br /><a href="https://github.com/danielpalme/ReportGenerator">GitHub</a> | <a href="http://www.palmmedia.de">www.palmmedia.de</a></div></div>
+<script type="text/javascript" src="combined.js"></script>
+</body></html>
